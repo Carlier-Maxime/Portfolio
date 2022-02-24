@@ -1,0 +1,37 @@
+.titre-dev {
+  background-image: url("src/assets/images/dev.jpg");
+  background-color: #14b5d0;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 450px;
+  background-position-y: 55px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+  width: 100%;
+}
+
+.titre-dev p {
+  font-size: 260%;
+  background: transparent;
+}
+
+.button-cv {
+  background-color: #1a3785;
+  background-image: none;
+  border-color: #1a62b0;
+  border-radius: 50px;;
+  cursor: pointer;
+  padding: 10px 25px;
+  margin: 25px 0;
+  transition: all .3s ease 0s;
+}
+
+.titre-dev a {
+  background: transparent;
+  color: inherit;
+  text-decoration: none;
+  text-decoration-color: currentColor;
+}
