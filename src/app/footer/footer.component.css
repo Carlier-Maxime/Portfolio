@@ -1,11 +1,17 @@
+* {
+  background-color: #2f2f2f;
+}
+
 .footer {
-  padding: 40px 0;
+  padding: 48px 0;
   width: 100%;
 }
 
 hr.solid {
-  border-top: 1px solid #bbb;
+  border-top: 1px solid #757575;
+  color: #707070;
   width: 25%;
+  margin: auto auto 12px;
 }
 
 .footer .social {
@@ -15,7 +21,7 @@ hr.solid {
 }
 
 .footer .social a {
-  border: 1px solid #ccc;
+  border: 1px solid #c7c7c7;
   border-radius: 50%;
   font-size: 30px;
   transition: all .3s ease 0s;
