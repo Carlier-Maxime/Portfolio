@@ -4,10 +4,12 @@
 }
 
 .navbar {
+  overflow: hidden;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  width: 100%;
+  position: fixed;
 }
 
 .navbar-links {
