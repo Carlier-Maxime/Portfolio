@@ -10,7 +10,7 @@
 hr.solid {
   border-top: 1px solid #757575;
   color: #707070;
-  width: 25%;
+  width: 30%;
   margin: auto;
 }
 
@@ -39,10 +39,11 @@ hr.solid {
 
 .footer ul li {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .footer ul li a, .footer ul li p {
+  display: inline-block;
   color: inherit;
   opacity: .4;
   text-decoration: none;
