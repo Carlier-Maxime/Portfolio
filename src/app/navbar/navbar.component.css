@@ -1,6 +1,7 @@
 * {
   background-color: dodgerblue;
   color: antiquewhite;
+  z-index: 100;
 }
 
 .navbar {
