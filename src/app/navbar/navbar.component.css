@@ -1,0 +1,31 @@
+.navbar {
+  background-color: dodgerblue;
+  color: antiquewhite;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+  transition: all .3s ease 0s;
+}
+
+.navbar-links li a {
+  color: antiquewhite;
+  text-decoration-color: currentColor;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
