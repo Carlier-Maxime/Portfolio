@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-project-preview',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-preview.component.css']
 })
 export class ProjectPreviewComponent implements OnInit {
+  @Input() name : string = '';
+  @Input() description : string = '';
+  @Input() link : string = '';
+  @Input() img : string = '';
+  @Input() competences : string[] = [];
 
   constructor() { }
 
