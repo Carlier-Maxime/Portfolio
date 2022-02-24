@@ -8,3 +8,9 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1 {
+  text-align: center;
+  font-size: 64px;
+  margin: 5px 5px;
+}
