@@ -1,6 +1,9 @@
-.navbar {
+* {
   background-color: dodgerblue;
   color: antiquewhite;
+}
+
+.navbar {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -23,9 +26,14 @@
 }
 
 .navbar-links li a {
-  color: antiquewhite;
+  font-size: 1.2rem;
   text-decoration-color: currentColor;
   display: block;
   padding: 1rem;
   text-decoration: none;
+}
+
+.name {
+  font-size: 1.8rem;
+  margin: .5rem;
 }
