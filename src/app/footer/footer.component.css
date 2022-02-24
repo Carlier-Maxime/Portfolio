@@ -17,7 +17,7 @@ hr.solid {
 .footer .social a {
   border: 1px solid #ccc;
   border-radius: 50%;
-  font-size: 25px;
+  font-size: 30px;
   transition: all .3s ease 0s;
 }
 
@@ -46,4 +46,19 @@ hr.solid {
   font-size: 15px;
   margin-top: 15px;
   text-align: center;
+}
+
+.footer .social a, .footer .social p {
+  color: inherit;
+  display: inline-block;
+  height: 40px;
+  line-height: 38px;
+  margin: 0 1px;
+  opacity: .4;
+  text-align: center;
+  width: 40px;
+}
+
+.footer .social p {
+  font-size: 20px;
 }
