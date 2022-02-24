@@ -1,0 +1,136 @@
+* {
+  background-color: #2f2f2f;
+}
+
+#container {
+  background-image: none;
+  box-shadow: rgb(96, 104, 108) 1px 15px 30px 1px;
+  border-radius: 8px;
+  height: 370px;
+  margin: 5em auto;
+  overflow: hidden;
+  text-align: center;
+  width: 700px;
+}
+
+.project-details {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  text-align: left;
+  width: 40%;
+}
+
+.project-details h1 {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0;
+  position: relative;
+}
+
+.project-details p {
+  color: #989898;
+  font-size: 18px;
+  text-align: center;
+}
+
+.control {
+  bottom: 20%;
+  left: 22.8%;
+  position: absolute;
+}
+
+.btn {
+  background-color: #1a3785;
+  background-image: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  transform: translateY(0);
+  transition: .3s linear;
+}
+
+.btn a {
+  color: inherit;
+  background: transparent;
+}
+
+.btn .code, .logo-github {
+  background-color: #4b4b4b;
+  background-image: none;
+  border: 0;
+  margin: 0;
+}
+
+.btn .code {
+  padding-right: 15px;
+  transform: translateX(-10%);
+}
+
+.btn .logo-github {
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.btn span {
+  display: inline-block;
+  font-family: Farsan,cursive;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 10px 20px;
+  transition: transform .3s;
+}
+
+.btn .github {
+  font-weight: bolder;
+  z-index: 3;
+  background: transparent;
+}
+
+.project-img {
+  display: inline-block;
+  float: right;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: all .3s ease-out;
+  width: 45%;
+}
+
+.project-img img {
+  height: 100%;
+}
+
+.info {
+  background: rgba(27,26,26,.9);
+  color: #fff;
+  cursor: no-drop;
+  font-size: 105%;
+  height: 100%;
+  left: 0;
+  line-height: 1.8;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  transform: translateX(-100%);
+  transition: all .3s ease-out;
+  width: 100%;
+}
+
+.info h2 {
+  text-align: center;
+}
+
+.info ul li {
+  transition: .3s ease;
+}
