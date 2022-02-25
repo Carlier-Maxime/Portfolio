@@ -105,6 +105,7 @@
   position: relative;
   transition: all .3s ease-out;
   width: 45%;
+  background-color: black;
 }
 
 .project-img img {
