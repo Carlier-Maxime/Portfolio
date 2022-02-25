@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectPreviewComponent } from './project-preview/project-preview.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -14,10 +15,11 @@ import { ProjectPreviewComponent } from './project-preview/project-preview.compo
     FooterComponent,
     ProjectPreviewComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        FormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

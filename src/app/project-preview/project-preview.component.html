@@ -19,10 +19,10 @@
 
   <div class="project-img">
 
-    <img [src]="'/assets/images/'+img" alt="apercu">
+    <img #infoimg [src]="'/assets/images/'+img" alt="apercu">
 
-    <div class="info">
-      <h2>Compétences</h2>
+    <div #info [@flyInOut]="isHover ? 'in' : 'out'" class="info">
+      <h2>Compétences {{isHover ? 'in' : 'out'}}</h2>
       <ul>
         <li *ngFor="let competence of competences">{{competence}}</li>
       </ul>
