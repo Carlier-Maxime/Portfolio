@@ -1,4 +1,4 @@
-import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {animate, state, style, transition, trigger} from "@angular/animations";
 
 @Component({
@@ -7,12 +7,9 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
   styleUrls: ['./project-preview.component.css'],
   animations: [
     trigger('flyInOut',[
-      state('in',style({backgroundColor: 'blue'})),
-      state('out',style({backgroundColor: 'red'})),
-      transition('void => *', [
-        style({backgroundColor: 'yellow', opacity: 50}),
-        animate(2000)
-      ])
+      state('in',style({transform: 'translateX(0%)'})),
+      state('out',style({transform: 'translateX(-100%)'})),
+      transition('* => *', [animate(200), style({transform: 'translateX(-50%)'})])
     ])
   ]
 })
@@ -24,9 +21,6 @@ export class ProjectPreviewComponent implements OnInit {
   @Input() img : string = '';
   @Input() competences : string[] = [];
 
-  @ViewChild('info') info: ElementRef | undefined;
-  @ViewChild('infoimg') infoimg: ElementRef | undefined;
-
   isHover: boolean = false;
 
   constructor() {
@@ -36,15 +30,6 @@ export class ProjectPreviewComponent implements OnInit {
   }
 
   toggle(): void {
-    console.log('toggle');
     this.isHover = !this.isHover;
   }
-
-  ngAfterViewInit(){
-    if (this.info!=undefined && this.infoimg != undefined){
-      this.infoimg.nativeElement.onmouseenter = this.toggle;
-      this.info.nativeElement.onmouseleave = this.toggle;
-    }
-  }
-
 }
