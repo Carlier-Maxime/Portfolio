@@ -7,13 +7,15 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectPreviewComponent } from './project-preview/project-preview.component';
 import {FormsModule} from "@angular/forms";
+import { CompetenceLinkComponent } from './competence-link/competence-link.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    ProjectPreviewComponent
+    ProjectPreviewComponent,
+    CompetenceLinkComponent
   ],
     imports: [
         BrowserModule,
