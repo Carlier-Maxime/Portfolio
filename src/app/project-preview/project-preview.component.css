@@ -17,10 +17,10 @@
   float: left;
   height: 100%;
   overflow: hidden;
-  padding: 30px;
+  padding: 25px;
   position: relative;
   text-align: left;
-  width: 40%;
+  width: 47%;
 }
 
 .project-details h1 {
@@ -32,12 +32,11 @@
 
 .project-details p {
   color: #989898;
-  font-size: 18px;
-  text-align: center;
+  font-size: 16px;
 }
 
 .control {
-  bottom: 20%;
+  bottom: 15%;
   left: 22.8%;
   position: absolute;
 }
@@ -110,11 +109,9 @@
 }
 
 .info {
-  background: rgba(27,26,26,.9);
+  background: rgba(27,26,26,.8);
   color: #fff;
-  cursor: no-drop;
-  font-size: 105%;
-  height: 100%;
+  height: 101%;
   left: 0;
   line-height: 1.8;
   position: absolute;
@@ -122,9 +119,16 @@
   top: 0;
   width: 100%;
   display: block;
-  transform: translateX(-50%);
 }
 
 .info h2 {
+  font-size: 24px;
   text-align: center;
+  background-color: #4b4b4b;
+}
+
+.info ul, ul li {
+  margin-left: 20px;
+  background-color: transparent;
+  font-size: 19px;
 }
