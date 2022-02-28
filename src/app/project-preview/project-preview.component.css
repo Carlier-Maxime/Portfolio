@@ -129,6 +129,14 @@
 
 .info ul, ul li {
   margin-left: 20px;
+}
+
+.info ul, ul li, ul li a {
   background-color: transparent;
   font-size: 19px;
+}
+
+.info ul li a {
+  text-decoration: none;
+  color: #018bf5;
 }
