@@ -9,7 +9,8 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
     trigger('flyInOut',[
       state('in',style({transform: 'translateX(0%)'})),
       state('out',style({transform: 'translateX(-100%)'})),
-      transition('* => *', [animate(200), style({transform: 'translateX(-50%)'})])
+      transition('out => in', [animate('0.35s 0ms ease-out'), style({transform: 'translateX(-50%)'})]),
+      transition('in => out', [animate('0.1s 100ms ease-in'), style({transform: 'translateX(-50%)'})])
     ])
   ]
 })
