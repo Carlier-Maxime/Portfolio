@@ -24,7 +24,11 @@
     <div (mouseleave)="toggle()" [@flyInOut]="isHover ? 'in' : 'out'" class="info">
       <h2>Compétences</h2>
       <ul>
-        <li *ngFor="let competence of competences">{{competence}}</li>
+        <li *ngFor="let competence of competences">
+          <div *ngIf="getLink(competence)!='#'; then thenBlock else elseBlock"></div>
+          <ng-template #thenBlock><a [href]="getLink(competence)" target="_blank">{{competence}}</a></ng-template>
+          <ng-template #elseBlock>{{competence}}</ng-template>
+        </li>
       </ul>
     </div>
   </div>
