@@ -1,13 +1,24 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {animate, state, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-competence-link',
+  animations: [
+    trigger('growIn',[
+      state('in', style({fontSize: '26px'})),
+      state('out',style({fontSize: '19px'})),
+      transition('out => in', [animate('0.2s 0ms ease-in-out')]),
+      transition('in => out',[animate('0.2s 10ms ease-in-out')])
+    ])
+  ],
   templateUrl: './competence-link.component.html',
   styleUrls: ['./competence-link.component.css']
 })
 export class CompetenceLinkComponent implements OnInit {
   @Input() competence:string = 'unknow';
   link:string;
+
+  isHover:boolean = false;
 
   constructor() {
     this.link=this.getLink(this.competence);
@@ -33,5 +44,9 @@ export class CompetenceLinkComponent implements OnInit {
       case "PyQt" : return "https://wiki.python.org/moin/PyQt";
       default: return "#";
     }
+  }
+
+  toggle() : void {
+    this.isHover = !this.isHover;
   }
 }
