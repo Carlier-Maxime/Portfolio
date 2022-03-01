@@ -1,7 +1,6 @@
 * {
   background-color: dodgerblue;
   color: antiquewhite;
-  z-index: 100;
 }
 
 .navbar {
@@ -10,7 +9,9 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 60px;
   position: fixed;
+  z-index: 100;
 }
 
 .navbar-links {
@@ -39,4 +40,10 @@ a {
 .name {
   font-size: 1.8rem;
   margin: .5rem;
+}
+
+.empty {
+  background-color: #1a3785;
+  width: 100%;
+  height: 60px;
 }
