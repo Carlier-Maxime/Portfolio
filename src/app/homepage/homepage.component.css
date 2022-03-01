@@ -5,10 +5,10 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 450px;
-  background-position-y: 55px;
+  background-position-y: 60px;
   display: flex;
   flex-direction: column;
-  height: 504px;
+  height: 448px;
   justify-content: center;
   width: 100%;
 }
