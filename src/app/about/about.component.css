@@ -1,8 +1,52 @@
 .container {
   margin: 0 auto;
   width: 70%;
+  background-color: #2f2f2f;
+  box-shadow: rgb(96, 104, 108) 1px 15px 30px 1px;
+  border-radius: 16px;
+}
+
+.container * {
+  margin: 10px 50px;
+  background-color: #2f2f2f;
 }
 
 p {
   margin: 3em auto;
+}
+
+h2 {
+  padding-top: 3em;
+}
+
+.tab {
+  margin: 0 auto;
+}
+
+.tab thead * {
+  background-color: #575757;
+  text-align: center;
+  padding: 2px 6px;
+  font-weight: bold;
+}
+
+.tab tbody * {
+  padding: 0 4px;
+}
+
+.tab tbody td:nth-child(even), .tab tbody td:nth-child(even) * {
+  background-color: #3e3e3e;
+}
+
+.tab tbody td:nth-child(odd), .tab tbody td:nth-child(odd) * {
+  background-color: #828282;
+}
+
+.tabContainer, .tabContainer * {
+  background-color: #282828;
+}
+
+.project li {
+  float: left;
+  text-decoration: none;
 }
