@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {max} from "rxjs";
 
 @Component({
   selector: 'app-about',
@@ -16,4 +17,27 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getLengthColumn() : number {
+    return Math.max(this.languages.length,this.logiciels.length,this.frameworks.length,this.se.length);
+  }
+
+  getLanguage(i:number) : string {
+    if (i>=this.languages.length) return ".";
+    return this.languages[i];
+  }
+
+  getLogiciel(i:number) : string {
+    if (i>=this.logiciels.length) return ".";
+    return this.logiciels[i];
+  }
+
+  getFramework(i:number) : string {
+    if (i>=this.frameworks.length) return ".";
+    return this.frameworks[i];
+  }
+
+  getSE(i:number) : string {
+    if (i>=this.se.length) return ".";
+    return this.se[i];
+  }
 }
