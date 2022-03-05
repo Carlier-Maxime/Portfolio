@@ -30,54 +30,12 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Languages -->
-          <td>
-            <tr>Java</tr>
-            <tr>C++</tr>
-            <tr>Python</tr>
-            <tr>PHP</tr>
-            <tr>HTML</tr>
-            <tr>CSS</tr>
-            <tr>Typescript</tr>
-            <tr>SQL</tr>
-            <tr>Bash</tr>
-          </td>
-          <!-- Logiciel -->
-          <td>
-            <tr>IntelliJ IDEA</tr>
-            <tr>PhpStorm</tr>
-            <tr>Py Charm</tr>
-            <tr>WebStorm</tr>
-            <tr>Visual studio Code</tr>
-            <tr>Visual studio</tr>
-            <tr>Notepad++</tr>
-            <tr>Unreal Engine</tr>
-            <tr>Git</tr>
-          </td>
-          <!-- Framework -->
-          <td>
-            <tr>Laravel</tr>
-            <tr>Angular</tr>
-            <tr>Qt</tr>
-            <tr>Pyqt</tr>
-            <tr>Java Swing</tr>
-            <tr>Bootstrap</tr>
-            <tr>Tensorflow</tr>
-            <tr>Keras</tr>
-            <tr>.</tr>
-          </td>
-          <!-- Systeme d'exploitation -->
-          <td>
-            <tr>Linux</tr>
-            <tr>Windows 10</tr>
-            <tr>Windows 7</tr>
-            <tr>Fedora</tr>
-            <tr>.</tr>
-            <tr>.</tr>
-            <tr>.</tr>
-            <tr>.</tr>
-            <tr>.</tr>
-          </td>
+          <tr *ngFor="let i of arrayLength">
+            <td>{{getLanguage(i)}}</td>
+            <td>{{getLogiciel(i)}}</td>
+            <td>{{getFramework(i)}}</td>
+            <td>{{getSE(i)}}</td>
+          </tr>
         </tbody>
       </table>
     </li>
@@ -90,7 +48,7 @@
         <li>Boto</li>
         <li>Sokoban</li>
       </ul>
-      <br>
+      <br> <br>
       Pour plus d'information sur les projet retourner a la homepage.
     </li>
     <li>Mail : 28m06c02@gmail.com</li>

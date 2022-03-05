@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {max} from "rxjs";
 
 @Component({
   selector: 'app-about',
@@ -11,14 +10,17 @@ export class AboutComponent implements OnInit {
   logiciels:string[] = ['Intellij IDEA','PhpStorm','PyCharm','WebStorm','Visual studio code','Visual studio','Notepad++','Unreal Engine','Git']
   frameworks:string[] = ['Laravel','Angular','Qt','Pyqt','Java Swing','Bootstrap','Tensorflow','Keras']
   se:string[] = ['Linux','Fedora','Windows 10','Windows 7']
+  arrayLength:number[]=[]
 
   constructor() { }
 
   ngOnInit(): void {
+    this.setArrayIndex();
   }
 
-  getLengthColumn() : number {
-    return Math.max(this.languages.length,this.logiciels.length,this.frameworks.length,this.se.length);
+  setArrayIndex() {
+    let max:number = Math.max(this.languages.length,this.logiciels.length,this.frameworks.length,this.se.length);
+    this.arrayLength = Array(max).fill(0).map((x,i)=>i);
   }
 
   getLanguage(i:number) : string {
