@@ -1,6 +1,22 @@
+.container {
+  box-shadow: rgb(96, 104, 108) 1px 15px 30px 1px;
+}
+
+.container, .container * {
+  margin: 0 auto;
+  width: 70%;
+  background-color: #2d2d2d;
+  border-radius: 16px;
+}
+
+.container form input {
+  background-color: #464646;
+  border-radius: 4px;
+}
+
 form {
   margin: 2em auto;
-  width: 70%;
+  width: 100%;
 }
 
 #name {
